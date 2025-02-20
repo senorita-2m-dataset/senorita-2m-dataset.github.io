@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- bulma css template -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet" />
+    <!-- ionicons -->
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- model viewer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js" type="module"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-PYVRSFMDRL');</script>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+    <link href="./static/css/bulma.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap" rel="stylesheet" />
+    <link href="./static/css/bulma-carousel.min.css" rel="stylesheet" />
+    <link href="./static/css/bulma-slider.min.css" rel="stylesheet" />
+    <link href="./static/css/fontawesome.all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet" />
+    <link href="./static/css/index.css" rel="stylesheet" />
+    <!-- <link rel="icon" href="./static/images/adobe.svg"> -->
+    <link href="./static/images/shooting-star.svg" rel="icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer="" src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <title>SENORITA</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Great+Vibes&display=swap'); .dancing-script { font-family: 'Dancing Script', cursive; } .pacifico { font-family: 'Pacifico', cursive; } .great-vibes { font-family: 'Great Vibes', cursive; } .modern-love-grunge { font-family: 'Modern Love Grunge', cursive; } .mystical-woods-rough-script { font-family: 'Mystical Woods Rough Script', cursive; } .script-mt-bold { font-family: 'Script MT Bold', cursive; } .vivaldi { font-family: 'Vivaldi', cursive; } .segoe-print { font-family: 'Segoe Print', cursive; font-size: 46px; background: linear-gradient(to right, rgb(0, 159, 255), rgb(236, 47, 75)); -webkit-background-clip: text; color: transparent; } .default-font { font-family: Arial, sans-serif; font-size: 46px; } /* 样式用来布局表格和标签 */ .table-container { display: flex; /* 使用 Flexbox 布局 */ align-items: center; /* 垂直居中对齐 */ } .label-column { width: 70px; /* 标签列的固定宽度 */ padding: 10px; /* 内边距 */ text-align: left; /* 文字右对齐 */ font-weight: bold; /* 加粗 */ } .content-column { flex: 1; /* 剩余空间全部给内容列 */ } table { border-collapse: collapse; /* 合并边框 */ width: 100%; /* 表格宽度100% */ } th, td { border: 0px solid #ccc; /* 边框样式 */ padding: 4px; /* 内边距 */ text-align: left; /* 文字左对齐 */ } .gradient-text { background-image: linear-gradient(to right, rgb(0, 159, 255), rgb(236, 47, 75)); -webkit-background-clip: text; /* 将渐变应用到文字 */ color: transparent; /* 使文字本身透明 */ } .comic-sans-ms { font-family: 'Comic Sans MS', cursive; font-size: 17px} .brush-script-mt { font-family: 'Brush Script MT', cursive; font-size: 17px} .pacifico { font-family: 'Pacifico', cursive; font-size: 17px} .dancing-script { font-family: 'Dancing Script', cursive; font-size: 20px} .indie-flower { font-family: 'Indie Flower', cursive; font-size: 17px} .architects-daughter { font-family: 'Architects Daughter', cursive; font-size: 17px} .caveat { font-family: 'Caveat', cursive; font-size: 17px} .cedarville-cursive { font-family: 'Cedarville Cursive', cursive; font-size: 17px} .handlee { font-family: 'Handlee', cursive; font-size: 17px} .homemade-apple { font-family: 'Homemade Apple', cursive; font-size: 17px} .just-another-hand { font-family: 'Just Another Hand', cursive; font-size: 17px} .kaushan-script { font-family: 'Kaushan Script', cursive; font-size: 17px} .kristi { font-family: 'Kristi', cursive; font-size: 17px} .sacramento { font-family: 'Sacramento', cursive; font-size: 17px} .satisfy { font-family: 'Satisfy', cursive; font-size: 17px} .segoe-print2 { font-family: 'Segoe Print', cursive; font-size: 17px} .bold { font-weight: bold;</style>
+    <link href="icon.ico" rel="icon" /></head>
+  
+  <body>
+    <section class="section">
+      <div class="container has-text-centered">
+        <p class="title is-3">
+          More Videos of the editors trained on Señorita-2M.
+
+        <section class="hero is-small">
+          <div class="hero-body">
+            <div class="container">
+              <div class="carousel results-carousel" id="results-carousel" style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\bf8d416fc4afe5df89a8a13d5f0b9ce2_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\bf8d416fc4afe5df89a8a13d5f0b9ce2.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Add rainbow.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\c78f4afb8dd138e75ff36c3baaa3f0a7_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\c78f4afb8dd138e75ff36c3baaa3f0a7.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Add a ship.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\ab216f3085bfb0c19008f4e60c686755_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\ab216f3085bfb0c19008f4e60c686755.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Add a ship.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\b88a86d01b28c9d0a107f908bcba0e0f_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\b88a86d01b28c9d0a107f908bcba0e0f.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\91c498482227e081658bf14b49e4756d.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\71708e1a9b1bdfabb461c4ae3251d8bd.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\0a7ca12c109344bd404904fc02115035_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\0a7ca12c109344bd404904fc02115035.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\916b986dff24de946a5e0cf6eff3b6bd.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\77411801922566c3e018234141cdb900.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\4714425f4b17d6fdce304d079cfcae50_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\4714425f4b17d6fdce304d079cfcae50.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\610e39b87bea4aecf5aff806bc6928db_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\610e39b87bea4aecf5aff806bc6928db.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it oil painting style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\2d51207e940883867af771e8b1ac3954_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\2d51207e940883867af771e8b1ac3954.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it oil painting style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\7c10def84cef2a9df0bb9787eae933ba_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\7c10def84cef2a9df0bb9787eae933ba.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it oil painting style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\742fc20545474d6603d8de620a0064b6_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\742fc20545474d6603d8de620a0064b6.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it oil painting style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\84f4d291a2b701dc5d856aafbc37d5d0_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\84f4d291a2b701dc5d856aafbc37d5d0.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it oil painting style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\906faa51e8875a65f3ae2e8ff40ba4f7_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\906faa51e8875a65f3ae2e8ff40ba4f7.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\663b63a217fb9e95af9686689f10bac7_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\663b63a217fb9e95af9686689f10bac7.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it oil painting style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\ccb8c4c97c641dfb035389d6fc8bc26f_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\ccb8c4c97c641dfb035389d6fc8bc26f.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\14e72ca60e0ea11cd2067023f677b9fc_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\14e72ca60e0ea11cd2067023f677b9fc.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\414802a0a31df7e5b6a13ea6c3b2b2b3_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\414802a0a31df7e5b6a13ea6c3b2b2b3.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\6c7ac3b703f13047d6ecd6f425f84c3d_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\6c7ac3b703f13047d6ecd6f425f84c3d.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\66746c763edfce2c79ff63ae9b189bb1_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\66746c763edfce2c79ff63ae9b189bb1.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\0a242e39d6f1f00c9b2ed5adc2a08b1b_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\0a242e39d6f1f00c9b2ed5adc2a08b1b.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\e0ef8fca4e9aa63ae7e8f9c055f5a505_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\e0ef8fca4e9aa63ae7e8f9c055f5a505.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\22717ad2508b0c2ed669f0d18487027a_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\22717ad2508b0c2ed669f0d18487027a.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it watercolor style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\673c9f81c6e2043851cd1d87ebeb1709_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\673c9f81c6e2043851cd1d87ebeb1709.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it golden.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\61abf216ea46d7564da8473ace8f8ec9_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\61abf216ea46d7564da8473ace8f8ec9.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it golden.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%;  margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\61abf216ea46d7564da8473ace8f8ec9_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\61abf216ea46d7564da8473ace8f8ec9.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it golden.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\aeaac614282a39a0ba2a15a5de808728.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\5ccdd9931f6c4a7770c31431f9d4c5d8.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\4d9efb252e599ce16b23c88cd1a603ee_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\4d9efb252e599ce16b23c88cd1a603ee.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\25cfd1a8bd0100d23f522ab633ee9a06_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\25cfd1a8bd0100d23f522ab633ee9a06.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make it anime style.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\78a41ba6f2e6e4507f5f0d4bc5e818c1_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\78a41ba6f2e6e4507f5f0d4bc5e818c1.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Remove the bird.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\6bc949319d000d72bc3d0f0b96707f30_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\6bc949319d000d72bc3d0f0b96707f30.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Remove the flower.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\5854a111de2619d528c43af3e9a50bf8_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\5854a111de2619d528c43af3e9a50bf8.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Remove the girl.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\7482b87e7b4fd66d20e6683d72cf08ee_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\7482b87e7b4fd66d20e6683d72cf08ee.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Remove the girl.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\76118faa06396c037db34dd59beb7ffe_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\76118faa06396c037db34dd59beb7ffe.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Remove the girl.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\2a98be479ef2f98821cc92cf52609658_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\2a98be479ef2f98821cc92cf52609658.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Add sunglasses on his head.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\34754c44144e653ffb1025b05654bc2a_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\34754c44144e653ffb1025b05654bc2a.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Add sunglasses on his head.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\8f6ab03e20abc251e5b186df14809aa7_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\8f6ab03e20abc251e5b186df14809aa7.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap tiger for cat.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\976990d45fe265bf9708b7777232e55b_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\976990d45fe265bf9708b7777232e55b.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make the flower blue.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\eb17e9cdd839bf41bff529f3949cd713_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\eb17e9cdd839bf41bff529f3949cd713.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap the dog for lion.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\f20b0be5bfd4e6953312566441ffeca0_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\f20b0be5bfd4e6953312566441ffeca0.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Transform the seagull into squirrel.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\da0bc0a114fddd76e73def4d065cfe08_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\da0bc0a114fddd76e73def4d065cfe08.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Transform the ship into the head of giant blue whale.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\2acc5ffc546f8e323404b4e822af6bd3_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\2acc5ffc546f8e323404b4e822af6bd3.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap the narcissus for lotus.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\c0012e1b4f86e9a15124d377ec532c49_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\c0012e1b4f86e9a15124d377ec532c49.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make the swan black.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\ab19cbfea153ff746736e9d7a5382ec3_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\ab19cbfea153ff746736e9d7a5382ec3.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap the dog for fox.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\e9f6bb0b3f4f3a729ed7cfcd96115db8_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\e9f6bb0b3f4f3a729ed7cfcd96115db8.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make the narcissus pink.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\6762b0f70104de68b2ddb7e9dda38e45_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\6762b0f70104de68b2ddb7e9dda38e45.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap the seagull for squirrel.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\411fdc335e341e077a3edc5f9c126c9c_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\411fdc335e341e077a3edc5f9c126c9c.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make the cat to pig.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\fcbea11b94350c993a58cd2cd3a03ddb_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\b0b79f17ddc21bfd15649285a36d4a57.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap duck for rooster.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\4f41f8ff0a419d98425409744d7c0338_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\4f41f8ff0a419d98425409744d7c0338.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap bird for squirrel.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\e29625a630d7df64eea2f1f2c293882f_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\e29625a630d7df64eea2f1f2c293882f.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Swap the seagull for squirrel.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\fdef7772a784fa6f8f618a5762237141_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\fdef7772a784fa6f8f618a5762237141.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make the swan black.</p></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 48%; margin-bottom: 4px;">
+                  <div class="item item-beach-dog" style="flex: 1 1 48%; margin-right: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\16473b6d7874b8402a2098d072f2590b_org.mp4" type="video/mp4" /></video>
+                  </div>
+                  <div class="item item-palace" style="flex: 1 1 48%; margin-left: 1%; margin-top: 0px;">
+                    <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+                      <source src="videos\16473b6d7874b8402a2098d072f2590b.mp4" type="video/mp4" /></video>
+                  </div>
+                  <p ;="" class="segoe-print2 bold" style="text-align: center; margin-top: -5px; margin-bottom: 2px">Make the narcissus pink.</p></div>
+              </div>
+            </div>
+            <!-- 结束container --></div>
+          <!-- 结束hero-body --></section>
+
+      </div>
+    </section>
+  </body>
+
+</html>
