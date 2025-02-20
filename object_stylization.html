@@ -110,56 +110,83 @@
 <section class="hero is-small">
 <div class="hero-body">
 <div class="container">
-<div class="carousel results-carousel" id="results-carousel" style="display: flex; flex-wrap: wrap; gap: 10px;">
-<div class="item item-beach-dog" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\597cac93c53ca71d69ed07c30526716d_org.mp4" type="video/mp4"/>
-</video>
+
+    <div style="width: 60%; margin: 0 auto; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">
+
+    <h3 class="title is-3 has-text-centered" style="font-size: 1.5em;">The Construction of the Local Stylization</h3>
+
+    <p style="text-align: left; font-size: 0.875em; margin-top: 1em; margin-bottom: 1em;">Inspired by SparseControl, CoCoCo, and AVID, we trained a local stylizer by combining both inpainting and ControlNet, enabling appearance modification, stylization, and texture manipulation in specific regions of videos, while keeping the original background unchanged. </p>
+
+        <div>
+        <img class="center-img" src="./imgs/local_stylization.PNG" width="80%">
+        </div>
+
+    <p style="text-align: left; font-size: 0.875em; margin-top: 1em; margin-bottom: 1em;">We use the same controlnet architecture as in our gloabl stylizer. The difference between two models mainly lies in the base model and input condition. For our local stylizer, we utilize the CogVideoX-2B model as the base. As shown in Figure, the main branch takes the original video latents, masked video latents, and mask latents as input (48 channels). To mitigate the inflated channel dimension, we initialize our patch embedder using the first 16 channels from CogVideoX-2B, while the remaining 32 channels are zero-initialized. Similarly, the patch embedder for control branch are also zero-initialized. </p>
+
+
+    <p style="text-align: left; font-size: 0.875em; margin-top: 1em; margin-bottom: 1em;">Our control branch consists of 6 DiT blocks copied from main branch. For training data, we use the mask and phrases in the training dataset. We then combine the phrase with some pronouns randomly, to compose them as a sentence for training. We trained our local stylizer for 1 epoch, with a batch size of 32, AdamW optimizer, a learning rate of 1e-5, and a weight decay of 1e-4. The training videos consist of 33 frames at a resolution of 336 x 592. Similarly, to preserve generalization ability and accelerate training, we freeze the FFN layers except for the first DiT block.</p>
+
+    <p style="text-align: left; font-size: 0.875em; margin-top: 1em; margin-bottom: 1em;">For inference, we use a classifier-free guidance scale of 6. The inference process completes within 1 minute on an Nvidia RTX 4090 for a video with a resolution of 336 x 592, the length is 33. We prepend the sentence prefix "It's" to the detected object phrase and pronouns to form a complete prompt. For example, when we want to paint the house in the video to yellow, we should use the prompt: "It's a yellow house."</p>
+
+    </div>
 </div>
-<div class="item item-palace" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\597cac93c53ca71d69ed07c30526716d.mp4" type="video/mp4"/>
-</video>
 </div>
-<div class="item item-beach-dog" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\47082d358115a2b616e603eabf894c68_org.mp4" type="video/mp4"/>
-</video>
-</div>
-<div class="item item-palace" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\47082d358115a2b616e603eabf894c68.mp4" type="video/mp4"/>
-</video>
-</div>
-<div class="item item-beach-dog" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\d0964ee84e7d40d7b9fa38a11792ab56_org.mp4" type="video/mp4"/>
-</video>
-</div>
-<div class="item item-palace" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\d0964ee84e7d40d7b9fa38a11792ab56.mp4" type="video/mp4"/>
-</video>
-</div>
-<div class="item item-beach-dog" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\67989e5e26cf2643fe0d23668e31a409_org.mp4" type="video/mp4"/>
-</video>
-</div>
-<div class="item item-palace" style="flex: 1 1 24%;">
-<video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
-<source src="videos\67989e5e26cf2643fe0d23668e31a409.mp4" type="video/mp4"/>
-</video>
-</div>
-</div> <!-- 结束results-carousel -->
+</section>
+
+<section class="hero is-small">
+<div class="hero-body">
+<div class="container">
+
 <h3 class="title is-3 has-text-centered">
-<span style="color: black;">Object  </span>
-<span style="color: #F9BD10;">Addition</span>
+<span style="color: black;">More Videos</span>
 </h3>
-<!-- 新添加的行 -->
-<p><a href="https://www.example.com">点击这里访问其他链接</a></p>
-</div> <!-- 结束container -->
-</div> <!-- 结束hero-body -->
+
+<div class="carousel results-carousel" id="results-carousel" style="display: flex; flex-wrap: wrap; gap: 10px; width: 80%; margin: 0 auto;">
+    <div class="item item-beach-dog" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/597cac93c53ca71d69ed07c30526716d_org.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-palace" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/597cac93c53ca71d69ed07c30526716d.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-beach-dog" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/47082d358115a2b616e603eabf894c68_org.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-palace" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/47082d358115a2b616e603eabf894c68.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-beach-dog" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/d0964ee84e7d40d7b9fa38a11792ab56_org.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-palace" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/d0964ee84e7d40d7b9fa38a11792ab56.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-beach-dog" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="beach-dog" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/67989e5e26cf2643fe0d23668e31a409_org.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <div class="item item-palace" style="flex: 1 1 24%;">
+        <video autoplay="" controls="" id="palace" loop="" muted="" playsinline="" poster="" style="width: 100%;">
+            <source src="videos/67989e5e26cf2643fe0d23668e31a409.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    <p><a href="index.html">Click and Back</a></p>
+</div>
+
+</div>
+</div>
 </section>
 </body>
 </html>
